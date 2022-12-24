@@ -2,6 +2,7 @@ import openai
 import os
 import streamlit as st
 
+# Autenticación de OpenAI
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def evaluar_texto(texto):
