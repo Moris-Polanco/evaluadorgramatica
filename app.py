@@ -4,8 +4,6 @@ import streamlit as st
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-
-
 def evaluar_texto(texto):
     # Utiliza GPT-3 para evaluar el texto
     model_engine = "text-davinci-003"
