@@ -5,6 +5,8 @@ import streamlit as st
 # Autenticación de OpenAI
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+ st.title("Evaluador de textos con GPT-3")
+
 def evaluar_texto(texto):
     # Utiliza GPT-3 para evaluar el texto
     model_engine = "text-davinci-003"
@@ -21,7 +23,8 @@ def evaluar_texto(texto):
 
 
 def main():
-    st.title("Evaluador de textos con GPT-3")
+   
+ st.title("Evaluador de textos con GPT-3")
 
     texto = st.text_area("Ingresa el texto a evaluar. Al finalizar, Ctrl+Enter")
     if texto:
