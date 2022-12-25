@@ -32,7 +32,7 @@ def main():
         # Convierte la cadena de bytes a una cadena de texto
         # Utiliza la codificación utf-8 por defecto, pero puedes especificar otra
         # si el archivo tiene una codificación diferente
-        file_content_text = file_content.decode("utf-8")
+        file_content_text = file_content.decode("docx")
 
         # Evalúa el contenido del archivo
         respuesta = evaluar_texto(file_content_text)
