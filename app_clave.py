@@ -30,7 +30,7 @@ def main():
 
     # Pide la clave de OpenAI en la barra lateral
     openai_key_input = st.sidebar.text_input("Ingresa tu clave de OpenAI:")
-    openai_key = openai_key_input.text
+    openai_key = openai_key_input.value
 
     # Agrega un evento de cambio de texto al widget de entrada de texto
     # para reemplazar los caracteres de la clave por puntos
