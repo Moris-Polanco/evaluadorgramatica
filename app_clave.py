@@ -24,7 +24,7 @@ def main():
 
     # Pide la clave de OpenAI en la barra lateral
     openai_key_input = st.sidebar.text_input("Ingresa tu clave de OpenAI:", type='password')
-    openai_key = openai_key_input.value
+    openai_key = openai_key
 
     if openai_key:
         openai.api_key = openai_key
