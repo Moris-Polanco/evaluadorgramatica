@@ -22,7 +22,7 @@ def main():
     st.caption("Evalúa la corrección gramatical y la riqueza léxica de textos en español")
     
     # Pide la clave de OpenAI en la barra lateral
-    openai_key = st.sidebar.text_input("Ingresa tu clave de OpenAI:, password=True")
+    openai_key = st.sidebar.text_input("Ingresa tu clave de OpenAI:", password=True)
     if openai_key:
         openai.api_key = openai_key
         
