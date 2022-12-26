@@ -28,7 +28,7 @@ def main():
     st.sidebar.subheader("Evaluador")
     opcion = st.sidebar.radio("Selecciona una opción:", ("Subir archivo", "Pegar texto"))
     
-        if opcion == "Subir archivo":
+    if opcion == "Subir archivo":
         uploaded_file = st.file_uploader("Selecciona un archivo de texto (extensión .txt):")
 
         if uploaded_file is not None:
