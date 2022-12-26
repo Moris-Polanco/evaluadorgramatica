@@ -20,8 +20,6 @@ def ocultar_clave(clave):
     # Reemplaza cada carácter de la clave por un punto
     clave_oculta = "." * len(clave)
 
-    return clave_oculta
-
 def main():
     st.title("Evaluador de textos con GPT-3")
 
