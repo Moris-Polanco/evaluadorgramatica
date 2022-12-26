@@ -53,4 +53,6 @@ def main():
             respuesta = evaluar_texto(texto)
             st.markdown(respuesta)
 
-if __name__ == "__
+
+if __name__ == "__main__":
+    main()
