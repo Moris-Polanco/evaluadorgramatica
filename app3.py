@@ -22,12 +22,13 @@ def evaluar_texto(texto):
 
 def main():
     st.title("Evaluador de textos con GPT-3")
-
+    st.subheader("Evalúa la corrección gramatical y la riqueza léxica de textos en español")
+    
     # Muestra un menú con dos opciones: subir archivo o pegar texto
     opcion = st.sidebar.radio("Selecciona una opción:", ("Subir archivo", "Pegar texto"))
 
     if opcion == "Subir archivo":
-        uploaded_file = st.file_uploader("Selecciona un archivo:")
+        uploaded_file = st.file_uploader("Selecciona un archivo de texto (extensión .txt):")
 
         if uploaded_file is not None:
             # Lee el contenido del archivo como una cadena de bytes
