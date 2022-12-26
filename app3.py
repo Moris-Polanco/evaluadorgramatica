@@ -27,6 +27,7 @@ def main():
     # Muestra un menú con dos opciones: subir archivo o pegar texto
     st.sidebar.subheader("Evaluador")
     opcion = st.sidebar.radio("Selecciona una opción:", ("Subir archivo", "Pegar texto"))
+    st.sidebar.caption("por Moris Polanco")
     
     if opcion == "Subir archivo":
         uploaded_file = st.file_uploader("Selecciona un archivo de texto (extensión .txt):")
