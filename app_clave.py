@@ -24,7 +24,8 @@ def main():
     st.sidebar.subheader("Evaluador")
 
     # Pide la clave de OpenAI en la barra lateral
-    openai_key = st.sidebar.text_input("Ingresa tu clave de OpenAI:", textPassword)
+    openai_key = st.sidebar.text_input("Ingresa tu clave de OpenAI:", password=True)
+
     if openai_key:
         openai.api_key = openai_key
 
