@@ -25,6 +25,7 @@ def main():
     st.caption("Evalúa la corrección gramatical y la riqueza léxica de textos en español")
     
     # Muestra un menú con dos opciones: subir archivo o pegar texto
+    st.subheader("Evaluador")
     opcion = st.sidebar.radio("Selecciona una opción:", ("Subir archivo", "Pegar texto"))
 
     if opcion == "Subir archivo":
