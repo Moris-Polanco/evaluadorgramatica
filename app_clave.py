@@ -25,10 +25,7 @@ def main():
     # Pide la clave de OpenAI en la barra lateral
     openai_key_input = st.sidebar.text_input("Ingresa tu clave de OpenAI:", type='password')
     openai_key = openai_key
-
-    if openai_key:
-        openai.api_key = openai_key
-
+            
     # Muestra un menú con dos opciones: subir archivo o pegar texto
     opcion = st.sidebar.radio("Selecciona una opción:", ["Subir archivo", "Pegar texto"])
 
