@@ -39,7 +39,7 @@ def main():
         openai_key_input.text = ocultar_clave(openai_key)
 
     if openai_key:
-        openai.api_key = openai_key
+        openai.api_key = openai_key 
         
     # Muestra un menú con dos opciones: subir archivo o pegar texto
     opcion = st.sidebar.radio("Selecciona una opción:", ("Subir archivo", "Pegar texto"))
