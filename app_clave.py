@@ -16,6 +16,11 @@ def evaluar_texto(texto):
     # Devuelve la respuesta de GPT-3
     return respuesta
 
+def ocultar_clave(clave):
+    # Reemplaza cada carácter de la clave por un punto
+    clave_oculta = "." * len(clave)
+
+    return clave_oculta
 
 def main():
     st.title("Evaluador de textos con GPT-3")
@@ -24,9 +29,12 @@ def main():
     st.sidebar.subheader("Evaluador")
 
     # Pide la clave de OpenAI en la barra lateral
-    openai_key = st.sidebar.text_input("Ingresa tu clave de OpenAI:", password=True)
-
+    openai_key = st.sidebar.text_input("Ingresa tu clave de OpenAI:")
     if openai_key:
+        # Muestra la clave con puntos en lugar de los caracteres originales
+        clave_oculta = ocultar_clave(openai_key)
+        st.sidebar.info(f"Clave: {clave_oculta}")
+
         openai.api_key = openai_key
 
     # Muestra un menú con dos opciones: subir archivo o pegar texto
